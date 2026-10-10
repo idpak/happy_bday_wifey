@@ -728,17 +728,17 @@ h1 {
     padding-bottom: 2rem;
   }
 
-  .section.intro,
-  .section.photos,
-  .section.date-ask {
+  .section.intro {
     justify-content: center;
     padding-top: 1rem;
   }
 
-  .section.heart {
-    justify-content: center;
+  .section.photos,
+  .section.heart,
+  .section.date-ask {
+    justify-content: flex-start;
     padding-top: 1rem;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.4rem;
   }
 
   .wish-card {
@@ -768,9 +768,13 @@ h1 {
     height: auto;
     min-height: 380px;
     width: min(96vw, 520px);
-    padding: 2.4rem 0 0.8rem;
+    padding: 1.2rem 0 0.6rem;
     align-items: center;
     justify-items: center;
+  }
+
+  #finalSlideBtn {
+    margin-top: 0.5rem;
   }
 
   .final-memory {
@@ -797,10 +801,15 @@ h1 {
     padding: 1rem 0.75rem 1.5rem;
   }
 
-  .section.intro,
-  .section.photos,
-  .section.date-ask {
+  .section.intro {
     justify-content: center;
+    padding-top: 0.8rem;
+  }
+
+  .section.photos,
+  .section.heart,
+  .section.date-ask {
+    justify-content: flex-start;
     padding-top: 0.8rem;
   }
 
@@ -843,11 +852,6 @@ h1 {
     width: 42px;
     height: 42px;
     font-size: 1.15rem;
-  }
-
-  .section.heart {
-    justify-content: center;
-    padding-top: 0.8rem;
   }
 
   .balloon-stage {
