@@ -128,6 +128,12 @@ if (heartBalloon && finalMemory) {
     finalMemory.classList.add("show");
     if (finalSlideBtn) {
       finalSlideBtn.classList.remove("hidden");
+      window.setTimeout(() => {
+        finalSlideBtn.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+        });
+      }, 240);
     }
     startMusic();
   });
