@@ -440,9 +440,12 @@ h1 {
 .balloon-stage {
   position: relative;
   width: min(94vw, 520px);
-  height: 420px;
-  display: grid;
-  place-items: end center;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
 }
 
 .heart-balloon.lift {
@@ -511,11 +514,10 @@ h1 {
 }
 
 .final-memory {
-  position: inherit;
+  position: relative;
   width: min(92vw, 560px);
-  left: 50%;
   opacity: 0;
-  transform: translateX(-50%) translateY(38px) scale(0.72);
+  transform: translateY(38px) scale(0.72);
   pointer-events: none;
   transition: opacity 500ms ease, transform 700ms cubic-bezier(0.22, 0.9, 0.3, 1.1);
   text-align: center;
@@ -528,7 +530,7 @@ h1 {
 
 .final-memory.show {
   opacity: 1;
-  transform: translateX(-50%) translateY(-22px) scale(1);
+  transform: translateY(0) scale(1);
 }
 
 .final-memory img {
