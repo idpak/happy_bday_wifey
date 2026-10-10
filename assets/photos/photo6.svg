@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Photo placeholder 6">
+  <defs>
+    <linearGradient id="g6" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd8c7"/>
+      <stop offset="100%" stop-color="#f0ae9f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g6)"/>
+  <ellipse cx="220" cy="260" rx="130" ry="95" fill="#fff2e3" opacity="0.5"/>
+  <ellipse cx="610" cy="720" rx="150" ry="110" fill="#ffd9cc" opacity="0.45"/>
+  <text x="50%" y="49%" text-anchor="middle" font-size="54" font-family="Georgia, serif" fill="#6f443f">Add Her Photo</text>
+  <text x="50%" y="56%" text-anchor="middle" font-size="30" font-family="Arial, sans-serif" fill="#85574f">photo6.svg</text>
+</svg>

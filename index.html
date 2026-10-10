@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Wifey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="assets/favicon.ico" type="image/png" sizes="16x16">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;600;700&family=Caveat:wght@500;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="bgm" loop>
+      <source src="assets/for_you.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main class="story">
+      <section id="section-intro" class="section intro active">
+        <div class="floating-orb orb-a"></div>
+        <div class="floating-orb orb-b"></div>
+
+        <article class="wish-card" id="wishCard" role="button" tabindex="0" aria-label="Open birthday card">
+          <div class="card-front">
+            <p class="eyebrow">A Little Surprise</p>
+            <h1 class="special-line">Something Special, for the one Special</h1>
+            <p class="subtext">Tap to unwrap this gift-card memory for you.</p>
+          </div>
+          <div class="card-back">
+            <h2>Firstly, Thank You for Stepping Into My Life</h2>
+            <p>
+              Maybe we’re still learning each other, but i hope we find a way to truly fall for each other,
+              not just because we’re meant to be husband and wife, but because, even before that,
+              we genuinely choose each other. ❤️
+            </p>
+            <button class="next-btn unfold-btn" data-next="section-photos">
+              Quiet Confessions <span class="unfold-finger" aria-hidden="true">👉</span>
+            </button>
+          </div>
+        </article>
+
+      </section>
+
+      <section id="section-photos" class="section photos">
+        <div class="section-head">
+          <h2>Your Memory Wall</h2>
+          <p>Oye.. Each photo has a confession hidden.</p>
+        </div>
+
+        <div class="photo-wall">
+          <div class="wall-top"></div>
+
+          <div class="photo-row">
+            <button class="polaroid" aria-label="Photo quote card 1">
+              <div class="string"></div>
+              <div class="pin"></div>
+              <div class="card-face card-photo">
+                <img src="assets/photos/First_Meet.jpeg" alt="Memory one" />
+              </div>
+              <div class="card-face card-quote">
+                <p>"You were once someone I was going to meet; now, you’re someone I look forward to know the little things that make you smile."</p>
+              </div>
+            </button>
+
+            <button class="polaroid" aria-label="Photo quote card 2">
+              <div class="string"></div>
+              <div class="pin"></div>
+              <div class="card-face card-photo">
+                <img src="assets/photos/Insta_Pic.jpeg" alt="Memory two" />
+              </div>
+              <div class="card-face card-quote">
+                <p>"Perhaps my favourite version of you will be the one I’m yet to discover."</p>
+              </div>
+            </button>
+
+            <button class="polaroid" aria-label="Photo quote card 3">
+              <div class="string"></div>
+              <div class="pin"></div>
+              <div class="card-face card-photo">
+                <img src="assets/photos/Engage_Pic.jpeg" alt="Memory three" />
+              </div>
+              <div class="card-face card-quote">
+                <p>"One day, I hope I’ll look at you and smile at how a stranger slowly became my favourite person."</p>
+              </div>
+            </button>
+
+            <button class="polaroid" aria-label="Photo quote card 4">
+              <div class="string"></div>
+              <div class="pin"></div>
+              <div class="card-face card-photo">
+                <img src="assets/photos/Bday_Pic.jpeg" alt="Memory four" />
+              </div>
+              <div class="card-face card-quote">
+                <p>"My heart feels at home when you are near.</br>P.S - Your smile on your b'day, made my day."</p>
+              </div>
+            </button>
+
+            <button class="polaroid" aria-label="Photo quote card 5">
+              <div class="string"></div>
+              <div class="pin"></div>
+              <div class="card-face card-photo">
+                <img src="assets/photos/Fav_Pic.jpeg" alt="Memory five" />
+              </div>
+              <div class="card-face card-quote">
+                <p>"You look adorable in this picture, but I have a feeling your little, unnoticed moments are even more beautiful."</p>
+              </div>
+            </button>
+            </div>
+        </div>
+
+        <button class="next-btn" data-next="section-heart">A promise ahead..</button>
+      </section>
+
+      <section id="section-heart" class="section heart">
+        <div class="section-head">
+          <h2>Not that easy, do what the baloon says..</h2>
+        </div>
+
+        <div class="balloon-stage">
+          <button id="heartBalloon" class="heart-balloon" aria-label="Reveal final photo">
+            <span class="heart-shape"></span>
+            <span class="balloon-label">Click Me</span>
+            <span class="balloon-thread"></span>
+          </button>
+
+          <article id="finalMemory" class="final-memory" aria-live="polite">
+            <img src="assets/photos/Main_Frame.jpeg" alt="A special memory" />
+            <p>"In every version of my future, I will still choose every variant of you."</p>
+          </article>
+        </div>
+
+        <button id="finalSlideBtn" class="next-btn hidden" data-next="section-date">Lastly, A question ahead..</button>
+      </section>
+
+      <section id="section-date" class="section date-ask">
+        <div class="section-head">
+          <h2>Shall We Go On a Date Again?</h2>
+          <p>Your answer can make this trip complete.</p>
+        </div>
+
+        <div class="proposal-box" id="proposalBox">
+          <button id="yesBtn" class="answer-btn yes">Yes</button>
+          <button id="noBtn" class="answer-btn no">No</button>
+        </div>
+
+        <p id="noFeedback" class="no-feedback" aria-live="polite"></p>
+
+        <p id="addressReveal" class="address-reveal">
+          Yay! Will pick you up tommorow... Time meeru decide cheiyali madam!!
+        </p>
+      </section>
+    </main>
+
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Mute background music">
+      🔊
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

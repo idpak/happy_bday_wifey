@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Photo placeholder 3">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd8c7"/>
+      <stop offset="100%" stop-color="#f7b7a4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g3)"/>
+  <polygon points="90,860 220,600 350,860" fill="#ffe7d7" opacity="0.55"/>
+  <polygon points="450,820 620,520 790,820" fill="#fff0e0" opacity="0.45"/>
+  <text x="50%" y="49%" text-anchor="middle" font-size="54" font-family="Georgia, serif" fill="#6e423e">Add Her Photo</text>
+  <text x="50%" y="56%" text-anchor="middle" font-size="30" font-family="Arial, sans-serif" fill="#87574f">photo3.svg</text>
+</svg>
